@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Bike Showroom</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<!-- Bootstrap -->
+<link rel="stylesheet" href="project.css">
+
+
+
+<script>
+
+function toggleTheme(){
+document.body.classList.toggle("dark");
+}
+
+</script>
+
+</head>
+
+<body>
+
+<header class="text-center p-3">
+
+<h1>Super Bike Showroom</h1>
+
+<nav>
+<a href="#">Home</a>
+<a href="#">Bikes</a>
+<a href="#">Contact</a>
+</nav>
+
+<button onclick="toggleTheme()" class="btn btn-warning">
+Dark / Light Mode
+</button>
+
+</header>
+
+<!-- Hero -->
+
+<section class="hero">
+
+<h2>Welcome to Our Bike Showroom</h2>
+
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+
+<p>Best place to buy sports bikes and racing bikes.</p>
+
+</section>
+
+<!-- Grid Bikes -->
+
+<h2 class="text-center">Our Bikes</h2>
+
+<div class="bike-grid">
+
+<div class="card">
+<img src="bike2.png">
+<h3>Yamaha R15</h3>
+</div>
+
+<div class="card">
+<img src="bike1.png">
+<h3>KTM RC 200</h3>
+</div>
+
+<div class="card">
+<img src="bike3.png">
+<h3>Royal Enfield</h3>
+</div>
+
+</div>
+
+<!-- Table -->
+
+<h2 class="text-center">Bike Price List</h2>
+
+<table>
+
+<tr>
+<th>Bike</th>
+<th>Price</th>
+<th>Top Speed</th>
+</tr>
+
+<tr>
+<td>Yamaha R15</td>
+<td>₹1,80,000</td>
+<td>150 km/h</td>
+</tr>
+
+<tr>
+<td>KTM RC 200</td>
+<td>₹2,10,000</td>
+<td>160 km/h</td>
+</tr>
+
+<tr>
+<td>Royal Enfield</td>
+<td>₹2,30,000</td>
+<td>140 km/h</td>
+</tr>
+
+</table>
+
+<br>
+
+<!-- Video -->
+
+<section class="text-center">
+
+<h2>Bike Video</h2>
+
+<video width="350" controls>
+<source src="https://www.w3schools.com/html/mov_bbb.mp4">
+</video>
+
+</section>
+
+<br>
+
+<!-- Audio -->
+
+<section class="text-center">
+
+<h2>Bike Sound</h2>
+
+<audio controls>
+<source src="https://www.w3schools.com/html/horse.mp3">
+</audio>
+
+</section>
+
+<br>
+
+<!-- Form -->
+
+<h2 class="text-center">Bike Booking</h2>
+
+<form>
+
+<label>Name</label>
+<input type="text">
+
+<label>Email</label>
+<input type="email">
+
+<label>Select Bike</label>
+
+<select>
+<option>Yamaha R15</option>
+<option>KTM RC 200</option>
+<option>Royal Enfield</option>
+</select>
+
+<label>Message</label>
+
+<textarea></textarea>
+
+<button class="btn btn-primary">Submit</button>
+
+</form>
+
+<br>
+
+<!-- iframe -->
+
+<h2 class="text-center">Our Location</h2>
+
+<div style="text-align:center">
+
+<iframe width="300" height="200"
+src="https://maps.google.com/maps?q=hyderabad&t=&z=13&ie=UTF8&iwloc=&output=embed">
+</iframe>
+
+</div>
+
+<footer class="text-center p-3">
+
+<p>© 2026 Bike Showroom Website</p>
+
+</footer>
+
+</body>
+</html>

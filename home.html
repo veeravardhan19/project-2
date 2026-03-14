@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Home - Bike Showroom</title>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<style>
+
+/* Body */
+
+body{
+font-family:Arial;
+margin:0;
+background:#f4f4f4;
+}
+
+/* Header */
+
+header{
+background:#222;
+color:white;
+text-align:center;
+padding:15px;
+}
+
+/* Navigation using Flex */
+
+nav{
+display:flex;
+justify-content:center;
+gap:20px;
+margin-top:10px;
+}
+
+nav a{
+color:white;
+text-decoration:none;
+font-weight:bold;
+}
+
+/* Hover pseudo class */
+
+nav a:hover{
+color:yellow;
+}
+
+/* Hero section */
+
+.hero{
+text-align:center;
+padding:40px;
+animation:fade 2s;
+}
+
+.hero img{
+width:300px;
+border-radius:10px;
+}
+
+/* Grid bikes */
+
+.bike-grid{
+display:grid;
+grid-template-columns:repeat(3,1fr);
+gap:20px;
+padding:30px;
+}
+
+.card{
+background:white;
+padding:10px;
+text-align:center;
+border-radius:8px;
+box-shadow:0 0 10px rgba(0,0,0,0.2);
+transition:0.3s;
+}
+
+.card img{
+width:100%;
+border-radius:8px;
+}
+
+/* Transition */
+
+.card:hover{
+transform:scale(1.05);
+}
+
+/* Animation */
+
+@keyframes fade{
+from{opacity:0;}
+to{opacity:1;}
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.bike-grid{
+grid-template-columns:1fr;
+}
+
+nav{
+flex-direction:column;
+}
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+<h1>Super Bike Showroom</h1>
+
+<nav>
+<a href="home.html">Home</a>
+<a href="bikes.html">Bikes</a>
+<a href="contact.html">Contact</a>
+</nav>
+
+</header>
+
+
+<!-- Hero Section -->
+
+<section class="hero">
+
+<h2>Welcome to Our Bike Showroom</h2>
+
+<p>Explore the best sports bikes and racing bikes.</p>
+
+<img src="https://images.unsplash.com/photo-1558981403-c5f9899a28bc">
+
+</section>
+
+
+<h2 style="text-align:center;">Popular Bikes</h2>
+
+<div class="bike-grid">
+
+<div class="card">
+<img src="bike2.png">
+<h3>Yamaha R15</h3>
+</div>
+
+<div class="card">
+<img src="bike1.png">
+<h3>KTM RC 200</h3>
+</div>
+
+<div class="card">
+<img src="bike3.png">
+<h3>Royal Enfield</h3>
+</div>
+
+</div>
+
+
+<footer style="text-align:center;background:#222;color:white;padding:10px">
+
+<p>© 2026 Bike Showroom</p>
+
+</footer>
+
+</body>
+</html>
